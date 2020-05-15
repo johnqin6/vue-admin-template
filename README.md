@@ -38,7 +38,7 @@ export {
 ```
 
 文件结构如下：   
-![全局组件结构](./static/images/global_components.png)  
+[全局组件结构](./static/images/global_components.png)  
 
 2、在components文件夹下新建一个index.js文件, 用于自动扫描全局组件并注册    
 ```javascript
