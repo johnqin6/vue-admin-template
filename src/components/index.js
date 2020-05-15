@@ -19,6 +19,5 @@ componentsContext.keys().forEach(module => {
 })
 
 components.forEach(component => {
-  console.log(component)
   Vue.component(component.name, component)
 })
