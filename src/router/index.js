@@ -7,13 +7,29 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import('../views/Home.vue')
+    name: 'home',
+    component: () => import('../views/Home.vue'),
+    meta: {
+      title: '首页'
+    }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login/Index'),
+    meta: {
+      title: '登录',
+      keepAlive: false, // 是否缓存组件
+      isAuth: false // 是否控制查看权限
+    }
   },
   {
     path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
+    name: 'about',
+    component: () => import('../views/About.vue'),
+    meta: {
+      title: 'about'
+    }
   },
   ...moduleRouter
 ]
